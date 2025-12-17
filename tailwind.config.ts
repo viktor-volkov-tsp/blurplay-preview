@@ -57,6 +57,8 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        "play-button": "hsl(var(--play-button))",
+        "play-button-hover": "hsl(var(--play-button-hover))",
       },
       borderRadius: {
         lg: "var(--radius)",
