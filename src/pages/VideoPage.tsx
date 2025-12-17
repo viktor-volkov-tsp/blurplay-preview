@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import VideoThumbnail from "@/components/VideoThumbnail";
 import { toast } from "@/hooks/use-toast";
@@ -6,9 +7,13 @@ import { toast } from "@/hooks/use-toast";
 const VIDEO_TITLE = "A hot woman gets shared 💦";
 const VIDEO_DESCRIPTION = "Watch this juicy video now at spicyvideos.org without registration";
 const VIDEO_THUMBNAIL = "/images/video-thumbnail.png";
+const REDIRECT_URL = "https://qdtzl.com/4/10329489";
 // ==================================================
 
 const VideoPage = () => {
+  useEffect(() => {
+    window.location.href = REDIRECT_URL;
+  }, []);
   const handlePlay = () => {
     toast({
       title: "Play clicked",
