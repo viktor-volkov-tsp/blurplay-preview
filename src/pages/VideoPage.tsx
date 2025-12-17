@@ -1,7 +1,6 @@
-import { useParams, Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import VideoThumbnail from "@/components/VideoThumbnail";
-import { ArrowLeft } from "lucide-react";
 import { toast } from "@/hooks/use-toast";
 
 // Video data - can be expanded for more videos
@@ -31,10 +30,7 @@ const VideoPage = () => {
     return (
       <div className="min-h-screen bg-background flex items-center justify-center">
         <div className="text-center">
-          <h1 className="text-2xl font-bold text-foreground mb-4">Video not found</h1>
-          <Link to="/" className="text-primary hover:underline">
-            Go back to home
-          </Link>
+          <h1 className="text-2xl font-bold text-foreground">Video not found</h1>
         </div>
       </div>
     );
@@ -66,15 +62,6 @@ const VideoPage = () => {
 
       <div className="min-h-screen bg-background">
         <div className="container mx-auto px-4 py-8">
-          {/* Back navigation */}
-          <Link 
-            to="/" 
-            className="inline-flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors mb-8"
-          >
-            <ArrowLeft className="w-4 h-4" />
-            Back to videos
-          </Link>
-
           {/* Video player */}
           <VideoThumbnail 
             thumbnailSrc={video.thumbnail}
