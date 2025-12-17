@@ -3,8 +3,8 @@ import VideoThumbnail from "@/components/VideoThumbnail";
 import { toast } from "@/hooks/use-toast";
 
 // ========== EDIT YOUR VIDEO DETAILS HERE ==========
-const VIDEO_TITLE = "42:36";
-const VIDEO_DESCRIPTION = "Watch the full video.";
+const VIDEO_TITLE = "A hot woman gets shared 💦";
+const VIDEO_DESCRIPTION = "Watch this juicy video now at juicyvideos without registration";
 const VIDEO_THUMBNAIL = "/images/video-thumbnail.png";
 // ==================================================
 
@@ -35,15 +35,9 @@ const VideoPage = () => {
 
       <div className="min-h-screen bg-background">
         <div className="container mx-auto px-4 py-8">
-          <VideoThumbnail 
-            thumbnailSrc={VIDEO_THUMBNAIL}
-            title={VIDEO_TITLE}
-            onClick={handlePlay}
-          />
+          <VideoThumbnail thumbnailSrc={VIDEO_THUMBNAIL} title={VIDEO_TITLE} onClick={handlePlay} />
 
-          <p className="mt-6 text-center text-muted-foreground max-w-2xl mx-auto">
-            {VIDEO_DESCRIPTION}
-          </p>
+          <p className="mt-6 text-center text-muted-foreground max-w-2xl mx-auto">{VIDEO_DESCRIPTION}</p>
         </div>
       </div>
     </>
