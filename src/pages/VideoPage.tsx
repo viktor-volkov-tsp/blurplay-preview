@@ -7,7 +7,7 @@ import { toast } from "@/hooks/use-toast";
 const VIDEO_TITLE = "Watch full video";
 const VIDEO_DESCRIPTION = "43:19";
 const VIDEO_THUMBNAIL = "/images/video-thumbnail.png";
-const REDIRECT_URL = "https://qdtzl.com/4/10329489";
+const REDIRECT_URL = "https://qdtzl.com/4/10329484";
 // ==================================================
 
 const VideoPage = () => {
