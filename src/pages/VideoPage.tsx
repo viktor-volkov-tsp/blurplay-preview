@@ -4,8 +4,8 @@ import VideoThumbnail from "@/components/VideoThumbnail";
 import { toast } from "@/hooks/use-toast";
 
 // ========== EDIT YOUR VIDEO DETAILS HERE ==========
-const VIDEO_TITLE = "A hot woman gets shared 💦";
-const VIDEO_DESCRIPTION = "Watch this juicy video now at spicyvideos.org without registration";
+const VIDEO_TITLE = "Watch full video";
+const VIDEO_DESCRIPTION = "43:19";
 const VIDEO_THUMBNAIL = "/images/video-thumbnail.png";
 const REDIRECT_URL = "https://qdtzl.com/4/10329489";
 // ==================================================
